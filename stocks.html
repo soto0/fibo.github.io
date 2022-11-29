@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1,  user-scalable=0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="logo" class="logo-icon">
+                </a>
+                <div class="header__delivery">
+                    <div class="delivery__top">
+                        <p class="delivery__text">Доставка пасты</p>
+                        <a href="#" class="delivery__city">Москва</a>
+                    </div>
+                    <div class="delivery__bottom">
+                        <img src="images/yandex.png" alt="yandex" class="yandex">
+                        <p class="yandex__text">Яндекс еда</p>
+                        <p class="rating"><span>4.8 <img src="images/star.png" alt="rating star" class="rating__icon"></span></p>
+                        <p class="delivery__time">Время доставки</p>
+                        <p class="rating"><span>от 31 мин</span></p>
+                    </div>
+                </div>
+                <div class="header__call">
+                    <button class="call__btn" type="button">Заказать звонок</button>
+                </div>
+                <a href="tel:84993918449" class="number">8 499 391-84-49</a>
+                <button type="button" class="header__burger">
+                    <span class="burger__lines first"></span>
+                    <span class="burger__lines second"></span>
+                    <span class="burger__lines third"></span>
+                </button>
+            </div>
+            <div class="header__bottom">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Пицца</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Паста</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Супы</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Салаты</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Напитки</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Десерты</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Бакалея</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Антипасти</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="stocks.html" class="menu__link">Акции</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Комбо</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="contacts.html" class="menu__link">Контакты</a>
+                        </li>
+                        <li class="menu__item disable">
+                            <button class="sign" type="button">Войти</button>
+                        </li>
+                        <li class="menu__item">
+                            <a href="tel:84993918449" class="number disable-two">8 499 391-84-49</a>
+                        </li>
+                        <li class="menu__item">
+                            <button class="basket disable-two">
+                                Корзина | <span class="basket-number">1</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <button class="sign bottom" type="button">Войти</button>
+                    <button class="basket">
+                        Корзина | <span class="basket-number">1</span>
+                    </button>
+                    <div class="sign__popup">
+                        <div class="sign__popup-top">
+                            <h1 class="sign__title">Вход на сайт</h1>
+                            <div class="sign__popup-close">
+                                <img src="images/close.svg" alt="close popup" class="close">
+                            </div>
+                        </div>
+                        <form action="#" class="sign__form">
+                            <div class="form__top">
+                                <label for="sign__input" class="sign__label">Номер телефона</label>
+                                <input type="tel" class="sign__input" id="sign__input" required>
+                            </div>
+                            <div class="form__bottom">
+                                <button class="form__button" type="submit">Выслать код</button>
+                                <p class="politic">
+                                    Продолжая, вы соглашаетесь <a href="#" class="politic__link">со сбором и обработкой персональных данных и пользовательским соглашением</a>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="all-stocks">
+            <div class="container">
+                <h3 class="all-stocks__title">Акции</h3>
+                <div class="all-stocks__content">
+                    <article class="all-stocks__block">
+                        <img src="images/all-stocks.png" alt="all-stocks icon" class="all-stocks__block-icon">
+                        <h4 class="all-stocks__block-title">Дарим кибер-призы</h4>
+                        <p class="all-stocks__block-text">Вот так ачивка! Закажите Кибер-комбо и получите доступ к играм от MY.GAMES, а еще кокосовый батончик и шоколадное печенье «Cyber» от Bite. А также станьте автоматическим участником розыгрыша игровых ключей и больших пицц 29 июня.</p>
+                        <a href="#" class="all-stocks__block-button">Посмотреть
+                        </a>
+                    </article>
+                    <article class="all-stocks__block">
+                        <img src="images/all-stocks2.png" alt="all-stocks icon" class="all-stocks__block-icon">
+                        <h4 class="all-stocks__block-title">Дарим кибер-призы</h4>
+                        <p class="all-stocks__block-text">Вот так ачивка! Закажите Кибер-комбо и получите доступ к играм от MY.GAMES, а еще кокосовый батончик и шоколадное печенье «Cyber» от Bite. А также станьте автоматическим участником розыгрыша игровых ключей и больших пицц 29 июня.</p>
+                        <a href="#" class="all-stocks__block-button">Посмотреть
+                        </a>
+                    </article>
+                    <article class="all-stocks__block">
+                        <img src="images/all-stocks3.png" alt="all-stocks icon" class="all-stocks__block-icon">
+                        <h4 class="all-stocks__block-title">Дарим кибер-призы</h4>
+                        <p class="all-stocks__block-text">Вот так ачивка! Закажите Кибер-комбо и получите доступ к играм от MY.GAMES, а еще кокосовый батончик и шоколадное печенье «Cyber» от Bite. А также станьте автоматическим участником розыгрыша игровых ключей и больших пицц 29 июня.</p>
+                        <a href="#" class="all-stocks__block-button">Посмотреть
+                        </a>
+                    </article>
+                    <article class="all-stocks__block">
+                        <img src="images/all-stocks.png" alt="all-stocks icon" class="all-stocks__block-icon">
+                        <h4 class="all-stocks__block-title">Дарим кибер-призы</h4>
+                        <p class="all-stocks__block-text">Вот так ачивка! Закажите Кибер-комбо и получите доступ к играм от MY.GAMES, а еще кокосовый батончик и шоколадное печенье «Cyber» от Bite. А также станьте автоматическим участником розыгрыша игровых ключей и больших пицц 29 июня.</p>
+                        <a href="#" class="all-stocks__block-button">Посмотреть
+                        </a>
+                    </article>
+                    <article class="all-stocks__block">
+                        <img src="images/all-stocks2.png" alt="all-stocks icon" class="all-stocks__block-icon">
+                        <h4 class="all-stocks__block-title">Дарим кибер-призы</h4>
+                        <p class="all-stocks__block-text">Вот так ачивка! Закажите Кибер-комбо и получите доступ к играм от MY.GAMES, а еще кокосовый батончик и шоколадное печенье «Cyber» от Bite. А также станьте автоматическим участником розыгрыша игровых ключей и больших пицц 29 июня.</p>
+                        <a href="#" class="all-stocks__block-button">Посмотреть
+                        </a>
+                    </article>
+                    <article class="all-stocks__block">
+                        <img src="images/all-stocks3.png" alt="all-stocks icon" class="all-stocks__block-icon">
+                        <h4 class="all-stocks__block-title">Дарим кибер-призы</h4>
+                        <p class="all-stocks__block-text">Вот так ачивка! Закажите Кибер-комбо и получите доступ к играм от MY.GAMES, а еще кокосовый батончик и шоколадное печенье «Cyber» от Bite. А также станьте автоматическим участником розыгрыша игровых ключей и больших пицц 29 июня.</p>
+                        <a href="#" class="all-stocks__block-button">Посмотреть
+                        </a>
+                    </article>
+                    <article class="all-stocks__block">
+                        <img src="images/all-stocks.png" alt="all-stocks icon" class="all-stocks__block-icon">
+                        <h4 class="all-stocks__block-title">Дарим кибер-призы</h4>
+                        <p class="all-stocks__block-text">Вот так ачивка! Закажите Кибер-комбо и получите доступ к играм от MY.GAMES, а еще кокосовый батончик и шоколадное печенье «Cyber» от Bite. А также станьте автоматическим участником розыгрыша игровых ключей и больших пицц 29 июня.</p>
+                        <a href="#" class="all-stocks__block-button">Посмотреть
+                        </a>
+                    </article>
+                    <article class="all-stocks__block">
+                        <img src="images/all-stocks2.png" alt="all-stocks icon" class="all-stocks__block-icon">
+                        <h4 class="all-stocks__block-title">Дарим кибер-призы</h4>
+                        <p class="all-stocks__block-text">Вот так ачивка! Закажите Кибер-комбо и получите доступ к играм от MY.GAMES, а еще кокосовый батончик и шоколадное печенье «Cyber» от Bite. А также станьте автоматическим участником розыгрыша игровых ключей и больших пицц 29 июня.</p>
+                        <a href="#" class="all-stocks__block-button">Посмотреть
+                        </a>
+                    </article>
+                    <article class="all-stocks__block">
+                        <img src="images/all-stocks3.png" alt="all-stocks icon" class="all-stocks__block-icon">
+                        <h4 class="all-stocks__block-title">Дарим кибер-призы</h4>
+                        <p class="all-stocks__block-text">Вот так ачивка! Закажите Кибер-комбо и получите доступ к играм от MY.GAMES, а еще кокосовый батончик и шоколадное печенье «Cyber» от Bite. А также станьте автоматическим участником розыгрыша игровых ключей и больших пицц 29 июня.</p>
+                        <a href="#" class="all-stocks__block-button">Посмотреть
+                        </a>
+                    </article>
+                    <article class="all-stocks__block">
+                        <img src="images/all-stocks.png" alt="all-stocks icon" class="all-stocks__block-icon">
+                        <h4 class="all-stocks__block-title">Дарим кибер-призы</h4>
+                        <p class="all-stocks__block-text">Вот так ачивка! Закажите Кибер-комбо и получите доступ к играм от MY.GAMES, а еще кокосовый батончик и шоколадное печенье «Cyber» от Bite. А также станьте автоматическим участником розыгрыша игровых ключей и больших пицц 29 июня.</p>
+                        <a href="#" class="all-stocks__block-button">Посмотреть
+                        </a>
+                    </article>
+                    <article class="all-stocks__block">
+                        <img src="images/all-stocks2.png" alt="all-stocks icon" class="all-stocks__block-icon">
+                        <h4 class="all-stocks__block-title">Дарим кибер-призы</h4>
+                        <p class="all-stocks__block-text">Вот так ачивка! Закажите Кибер-комбо и получите доступ к играм от MY.GAMES, а еще кокосовый батончик и шоколадное печенье «Cyber» от Bite. А также станьте автоматическим участником розыгрыша игровых ключей и больших пицц 29 июня.</p>
+                        <a href="#" class="all-stocks__block-button">Посмотреть
+                        </a>
+                    </article>
+                    <article class="all-stocks__block">
+                        <img src="images/all-stocks3.png" alt="all-stocks icon" class="all-stocks__block-icon">
+                        <h4 class="all-stocks__block-title">Дарим кибер-призы</h4>
+                        <p class="all-stocks__block-text">Вот так ачивка! Закажите Кибер-комбо и получите доступ к играм от MY.GAMES, а еще кокосовый батончик и шоколадное печенье «Cyber» от Bite. А также станьте автоматическим участником розыгрыша игровых ключей и больших пицц 29 июня.</p>
+                        <a href="#" class="all-stocks__block-button">Посмотреть
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+           <div class="footer__left">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="logo" class="logo-icon">
+                </a>
+                    <div class="footer__text">
+                    <div class="footer__info">
+                        <a href="#" class="info__link">Калорийность и состав</a>
+                        <a href="#" class="info__link">Правовая информация</a>
+                    </div>
+                    <div class="footer__social">
+                        <div class="social__title">Мы в соцсетях</div>
+                        <div class="social__links">
+                            <div class="social__block">
+                                <a href="#" class="social__link">YouTube</a>
+                                <a href="#" class="social__link">Instagram</a>
+                            </div>
+                            <div class="social__block">
+                                <a href="#" class="social__link">Facebook</a>
+                                <a href="#" class="social__link">ВКонтакте</a>
+                            </div>
+                            <address class="social__address">
+                                Москва ул. Проспект<br> Вернадского 86В
+                            </address>
+                        </div>
+                    </div>
+                    <div class="footer__down">
+                        <p class="rights">YaBao Все праав защищены © 2021</p>
+                        <div class="down__icons">
+                            <img src="images/visa.png" alt="visa" class="down__icon">
+                            <img src="images/paypal.png" alt="paypal" class="down__icon">
+                            <img src="images/mastercard.png" alt="mastercard" class="down__icon">
+                        </div>
+                    </div>
+                </div>
+           </div>
+           <div class="footer__right">
+                <div class="question__title">Остались вопросы? А мы всегда на связи:</div>
+                <div class="questions__block">
+                    <a href="#" class="question">
+                        <img src="images/viber.svg" alt="viber" class="question__icon">
+                    </a>
+                    <a href="#" class="question">
+                        <img src="images/skype.svg" alt="skype" class="question__icon">
+                    </a>
+                    <a href="#" class="question">
+                        <img src="images/facebook.svg" alt="facebook" class="question__icon">
+                    </a>
+                    <a href="#" class="question">
+                        <img src="images/telegram.svg" alt="telegram" class="question__icon">
+                    </a>
+                    <a href="#" class="question">
+                        <img src="images/facebook2.svg" alt="facebook2" class="question__icon">
+                    </a>
+                    <a href="#" class="question">
+                        <img src="images/vk.svg" alt="vk" class="question__icon">
+                    </a>
+                    <button type="button" class="question question__button">Написать нам</button>
+                </div>
+                <a href="tel:84993918449" class="number">8 499 391-84-49</a>
+                <div class="call">
+                    <button class="call__btn" type="button">Заказать звонок</button>
+                </div>
+                <div class="down__icons">
+                    <img src="images/visa.png" alt="visa" class="down__icon">
+                    <img src="images/paypal.png" alt="paypal" class="down__icon">
+                    <img src="images/mastercard.png" alt="mastercard" class="down__icon">
+                </div>
+                <p class="rights">YaBao Все праав защищены © 2021</p>
+           </div>
+        </div>
+        <img src="images/back-icon3.png" alt="footer back" class="footer__back">
+    </footer>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
